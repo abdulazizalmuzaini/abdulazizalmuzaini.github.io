@@ -1,3 +1,14 @@
+# Welcome to My Portfolio
+
+---
+
+### Learn About My Projects
+
+#### [Internal Blog Post Project](/bank)
+<img src="images/marketing_project.png?raw=true"/>
+Analyzed marketing data for a Brazilian delivery platform case study to find out which age and income groups spend the most, and how their purchasing behaviour could help shape the company’s marketing strategy. 
+
+---
 #### [Linked File Project](/files/Day 12 - 21 days to data.pdf)
 <img src="images/Education_data.png?raw=true"/>
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
@@ -27,3 +38,6 @@ What are the top math schools in the state?
 - [Project 5 Title](http://example.com/)
 
 ---
+
+
+
