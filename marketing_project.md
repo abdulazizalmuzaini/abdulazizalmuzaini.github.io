@@ -12,11 +12,11 @@ The "high-income" group are the biggest spenders they spent a total of 655,186, 
 
 The data suggests that in-store purchases are the favourite channel used by 11,737 customers, followed by website purchases made by 8,317 customers, then purchases made through a catalogue by 5,345 customers, and lastly purchasing by discounts by 4,709 customers.
 
-<img src="images/pic1_marketing.jpg?raw=true"/>
+<img src="images/pic1_marketing.png?raw=true"/>
 
-<img src="images/pic2_marketing.jpg?raw=true"/>
+<img src="images/pic2_marketing.png?raw=true"/>
 
-You can find the same dataset used in this analysis in Kaggle, click here to access the link. It includes 2,021 rows and 44 different attributes. The Key attributes that I used in segmenting the data, are the total amount purchased by customers, customer income, customer age, and purchasing behaviour across different channels. 
+You can find the same dataset used in this analysis in Kaggle, [click here to access the link](https://www.kaggle.com/datasets/fayez7/ifood-marketing-campaigns?resource=download). It includes 2,021 rows and 44 different attributes. The Key attributes that I used in segmenting the data, are the total amount purchased by customers, customer income, customer age, and purchasing behaviour across different channels. 
 
 Kindly note that there are other attributes available in the dataset that are not used in the analysis that can also be useful.
 
@@ -33,23 +33,23 @@ The data suggests that the high-income group, especially those aged "36-50" and 
 
 The upper-middle income group in the "51-65" age bracket also looks promising as a potential target, they have spent a total of 154,076.
 
-<img src="images/pic3_marketing.jpg?raw=true"/>
+<img src="images/pic3_marketing.png?raw=true"/>
 
 In terms of customers buying habits, in-store purchases were the most common channel used by customers, with about 39% of all users (11,737 customers) choosing this method, followed by website purchases 27% (8,317 customers), then catalogue purchases 18% (5,345 customer), then buying from discounts 16% (4,709 customers).
 
-<img src="images/pic2_marketing.jpg?raw=true"/>
+<img src="images/pic2_marketing.png?raw=true"/>
 
 4,265 customers in the "high-income" group bought most of their goods in store, followed by 3,849 customers in the "upper-middle" income bracket bought their products in store.
 
-<img src="images/pic4_marketing.jpg?raw=true"/>
+<img src="images/pic4_marketing.png?raw=true"/>
 
 4,585 customers in the "36-50" age group bought their goods in store, the next potential age group segment is the "51-65", where 4,242 customers bought their products in store.
 
-<img src="images/pic5_marketing.jpg?raw=true"/>
+<img src="images/pic5_marketing.png?raw=true"/>
 
 The "upper-middle" income group made the most purchases across all channels, but the highest sales amounts still came from the "high-income" and "36-50" age groups, who prefer in-store shopping over buying with discounts.
 
-<img src="images/pic6_marketing.jpg?raw=true"/>
+<img src="images/pic6_marketing.png?raw=true"/>
 
 ## Here is how to execute and nested IFS statement in Excel:
 Go to the column you want to create groups for. Then, insert a new column to the right of the income column for example. Enter this formula:
