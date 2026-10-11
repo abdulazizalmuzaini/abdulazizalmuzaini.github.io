@@ -2,7 +2,8 @@
  
 In this project, I used the 2017 State of Massachusetts education data. The project is part of the Data Analytics Accelerator Program led by Avery Smith.  
 
-The dashboard was created using Tableau. The number of schools in the dataset is 1,861. The number of students is 953,748. The analysis aims to answer these key questions:  
+The dashboard was created using Tableau. The total number of schools included in the dataset was 1,861, and the number of students was 953,748. 
+The analysis aims to answer these key questions:  
 What are the top math schools? 
 Which schools are struggling the most?  
 Does the average class size affect college admissions? 
