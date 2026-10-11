@@ -51,7 +51,7 @@ The "upper-middle" income group made the most purchases across all channels, but
 
 <img src="images/pic6_marketing.png?raw=true"/>
 
-## Here is how to execute and nested IFS statement in Excel:
+## Here is how to execute a nested IFS statement in Excel:
 Go to the column you want to create groups for. Then, insert a new column to the right of the income column for example. Enter this formula:
 
 =IFS(AND(Cell#>=1700,Cell#<=35400),"low",
