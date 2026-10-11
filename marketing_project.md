@@ -1,7 +1,7 @@
 # Which Customers Spend the Most? Segmenting Brazilian Delivery Platform Users
 Understanding which customer segment bring in the most value is a key question for any company, especially in the competitive world of tech-based delivery services. For this project, I analysed customer data from a Brazilian delivery platform case study in Kaggle, aiming to find out which age and income groups spend the most, and how their purchasing behaviour could help shape the company’s marketing strategy. 
 
-This analysis was completed as part of the #### [Data Analytics Accelerator Bootcamp](https://datacareerjumpstart.com/bootcamp). The main goal is to help the company's stakeholders decide which customer segment to focus on, and to support the creation of a clear positioning statement. By identifying the most valuable segments, the company can make better decisions about where to direct its marketing efforts.
+This analysis was completed as part of the [Data Analytics Accelerator Bootcamp](https://datacareerjumpstart.com/bootcamp). The main goal is to help the company's stakeholders decide which customer segment to focus on, and to support the creation of a clear positioning statement. By identifying the most valuable segments, the company can make better decisions about where to direct its marketing efforts.
 
 Market Segmentation is when you divide the market into groups that share similar characteristics such as age, income, purchasing behaviour, and product preferences. Targeting is when you choose to focus your marketing efforts on a specific group or segment with the highest value. Positioning is your unique selling proposition for the target segment you have selected. 
 
