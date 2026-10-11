@@ -10,6 +10,11 @@ Analyzed marketing data for a Brazilian delivery platform case study to find out
 
 ---
 
+#### [Massachusetts Education Data Dashboard](/education_project)
+<img src="images/Education_data.png?raw=true"/>
+Created a dashboard using tableau for the 2017 State of Massachusetts education data. 
+
+---
 
 
 
