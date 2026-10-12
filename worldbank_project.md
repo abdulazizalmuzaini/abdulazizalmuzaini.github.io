@@ -1,71 +1,42 @@
-# Which Customers Spend the Most? Segmenting Brazilian Delivery Platform Users
-Understanding which customer segment bring in the most value is a key question for any company, especially in the competitive world of tech-based delivery services. For this project, I analysed customer data from a Brazilian delivery platform case study in Kaggle, aiming to find out which age and income groups spend the most, and how their purchasing behaviour could help shape the company’s marketing strategy. 
+# Major Projects in the Eastern Horn of Africa - 2022 
+ 
+In the eastern Horn of Africa, the period from 2020 to 2022 experienced intense and recurrent cycles of flooding and droughts. During 2019/2020 there were extreme rains that caused devastating floods. Furthermore, La Niña climate patterns reached extreme levels not seen in the last 70 years, causing severe droughts during the 2020-2023 period. In addition, deforestation and land degradation have negatively impacted the region's ability to resist extreme weather events. The main sectors affected by the weather conditions include agriculture, water resources, and health.  
 
-This analysis was completed as part of the [Data Analytics Accelerator Bootcamp](https://datacareerjumpstart.com/bootcamp). The main goal is to help the company's stakeholders decide which customer segment to focus on, and to support the creation of a clear positioning statement. By identifying the most valuable segments, the company can make better decisions about where to direct its marketing efforts.
+Climate-related hazards triggered economic shocks, while social factors such as deforestation, migration, urbanization, and indebtedness exacerbated the crisis. For example, in Kenya 205,000 people migrated to Garissa County because of the drought. In Ethiopia, Kenya, and Somalia, 30 million people faced food insecurity in 2020-2022.  Drought has reduced food supplies and driven hyperinflation, particularly in Ethiopia, where inflation reached 30-35%. Some countries adopted export bans to secure their own food supplies, restricting access for nations dependent on food imports. [Click this link to read more about the Horn of Africa floods and drought, 2020-2023 - Forensic analysis](https://www.undrr.org/resource/horn-africa-floods-and-drought-2020-2023-forensic-analysis). 
 
-Market Segmentation is when you divide the market into groups that share similar characteristics such as age, income, purchasing behaviour, and product preferences. Targeting is when you choose to focus your marketing efforts on a specific group or segment with the highest value. Positioning is your unique selling proposition for the target segment you have selected. 
+The main aim of this article is to analyze the World Bank's International Development Association (IDA) dataset using SQL. The dataset is a snapshot of the November 2022 period made up of 9,998 rows. SQL query statements were performed using the online (CSVfiddle.io) platform. Specific research questions include: What was the total principal amount extended to Ethiopia, Kenya, and Somalia? What are the major IDA-funded projects in the eastern Horn of Africa? How much does each country owe the IDA? How much of the loans have been paid back to the IDA? How much has each country utilized the loans? How much of the loan is available for draw down for each country? 
 
-## So, with the help of Excel, we imported 2,021 row data set (year=2020) and learned:
-The "36-50" and "51-65" age groups are the biggest spenders at the food delivery platform, where the "36-50" age group spent 236,467, and the "51-65" age group spent 220,580.
+The total loan principal amount extended by the IDA to Ethiopia is US$ 29.1 billion, followed by US$18.4 billion for Kenya, and US$ 2.6 billion for Somalia. Through SQL, the data is filtered by country, and what is interesting is that the IN-clause acts similarly to the OR clause by combining several countries as multiple conditions. 
 
-The "high-income" group are the biggest spenders they spent a total of 655,186, followed by the "upper-middle" income group they have spent 348,070, making these two groups as potential target segments for the company.
+Total Due to IDA represents the outstanding balance at the end of the reporting period. It is what each country in the eastern Horn of Africa must pay back to the IDA. By splitting each country as its own category, the total due to IDA amounts for Ethiopia in 2022 was US$ 10.7 billion, Kenya US$ 10.1 billion, and Somalia US$ 104.7 million.  
 
-The data suggests that in-store purchases are the favourite channel used by 11,737 customers, followed by website purchases made by 8,317 customers, then purchases made through a catalogue by 5,345 customers, and lastly purchasing by discounts by 4,709 customers.
+Given the massive scale of loans extended to the Horn of Africa countries across numerous initiatives, this article focuses on three major projects. 
 
-<img src="images/pic1_marketing.png?raw=true"/>
+ In Kenya, the Inclusive Growth and Fiscal Development Policy Operation (DPO) was financed at US$ 750 million. The purpose of the project was to support Kenya's economic recovery following the COVID-19 pandemic and severe droughts. Additionally, the project aimed to provide social safety nets for disadvantaged households and expand digital financial inclusion for small and medium-sized enterprises. The project also aims to fund policy reforms including fiscal transparency, public procurement, public financial management, and fighting corruption. [Click here to watch the video about the project](https://www.worldbank.org/en/news/video/2022/03/16/kenya-receives-a-750-million-boost-to-support-economic-transformation-post-pandemic). 
 
-<img src="images/pic2_marketing.png?raw=true"/>
+In Ethiopia, the Growth and Competitiveness Project was funded by World Bank's IDA with a total amount of $US 600 million. The government aims to increase public investment in the agriculture and service sectors. However, Ethiopia has achieved only modest structural economic transformation and private sector development. The new leadership announced decisions to expand the role of the private sector, reform state-owned Enterprises, and enhance fiscal sustainability. [Click here to read more about this project](https://documents.worldbank.org/en/publication/documents-reports/documentdetail/446071551898567481#:~:text=De%20Facto%20Governments%2C%20Democratic%20Government%2C%20Economics%20and,Version%20Type.%20Final.%20*%20Product%20Line.%20IBRD%2FIDA.). 
 
-You can find the same dataset used in this analysis in Kaggle, [click here to access the link](https://www.kaggle.com/datasets/fayez7/ifood-marketing-campaigns?resource=download). It includes 2,021 rows and 44 different attributes. The Key attributes that I used in segmenting the data, are the total amount purchased by customers, customer income, customer age, and purchasing behaviour across different channels. 
+In Somalia, one of the major IDA-funded projects was the Reengagement and Reform Development Policy Financing (DPF). The objective of this DPF is to normalize relations between Somalia and the World Bank Group, as well as make policy reforms such as improving fiscal management, enhancing private sector growth, building human capital, and strengthening climate resilience. The total loan amount was US$420 million subdivided into two tranches. The first tranche of US$ 375 million was designated to restructure Somalia's overdue debt, while the second tranche of US$ 45 million supported budget cash-flow needs. [Click here to access more information about this project](https://documents.worldbank.org/pt/publication/documents-reports/documentdetail/691651583636465400). The SQL Query used to find the top projects: 
 
-Kindly note that there are other attributes available in the dataset that are not used in the analysis that can also be useful.
+## Ethiopia:
 
-The analysis was done in Excel, using a nested IFS statement formula to segment the data by income and age, which is done by adding new columns for the "age group" and "income group" data. Then a pivot table and a bar chart was created using the total amount purchased column.
+## Somalia:
 
-For the purchasing behaviour, I've created a pivot table including the demographic groups "age" and "income" and include four data columns related to purchasing behaviour. These are purchases made by the website, catalogue, in-store, and discounts. 
+## Kenya:
 
-## A few groups clearly stood out in terms of spending:
-Customers in the "high-income" bracket aged "36-50" spent a total of 236,467 at the delivery platform, making them the highest-spending group overall.
+The total amounts repaid to the World Bank's IDA for each country in the eastern Horn of Africa, ordered from highest to lowest, show that Ethiopia has repaid the largest amount at US$ 3.9 billion. Kenya has repaid US$ 2.3 billion, and Somalia has repaid the lowest amount at US$ 308.87 million (noting that Somalia also borrowed the smallest loan amount from the IDA).
 
-On the other end, customers aged "66 and above" in the "low-income" bracket spent only 2,776, the lowest amount among all groups.
+The total disbursed amount represents the total funds each country has withdrawn from its original loan allocation. Ethiopia has disbursed US$ 2.14 billion from its original loan, while Kenya and Somalia have disbursed US$ 1.32 billion and US$ 1.34 billion, respectively.  
 
-The data suggests that the high-income group, especially those aged "36-50" and "51-65", are the most favourable target segments for the company’s future marketing positioning.
-
-The upper-middle income group in the "51-65" age bracket also looks promising as a potential target, they have spent a total of 154,076.
-
-<img src="images/pic3_marketing.png?raw=true"/>
-
-In terms of customers buying habits, in-store purchases were the most common channel used by customers, with about 39% of all users (11,737 customers) choosing this method, followed by website purchases 27% (8,317 customers), then catalogue purchases 18% (5,345 customer), then buying from discounts 16% (4,709 customers).
+What portion of the undisbursed amount has been cancelled, and what funds remain available for each country to draw down?  In Kenya, out of a total undisbursed loan amount of US$ 3.4 billion, US$1.5 billion has been cancelled leaving a remaining balance of US$1.89 billion available for drawdown by the Kenyan government. In Ethiopia, the total undisbursed amount is US$5.9 billion, with US$1.3 billion cancelled, leaving US$4.6 billion available for drawdown. Finally, Somalia has total undisbursed amount of US$1.1 billion, of which US$ 162.1 million has been cancelled, leaving US$ 913.1 million available for the Somali government to drawdown. 
 
 <img src="images/pic2_marketing.png?raw=true"/>
-
-4,265 customers in the "high-income" group bought most of their goods in store, followed by 3,849 customers in the "upper-middle" income bracket bought their products in store.
-
-<img src="images/pic4_marketing.png?raw=true"/>
-
-4,585 customers in the "36-50" age group bought their goods in store, the next potential age group segment is the "51-65", where 4,242 customers bought their products in store.
-
 <img src="images/pic5_marketing.png?raw=true"/>
-
-The "upper-middle" income group made the most purchases across all channels, but the highest sales amounts still came from the "high-income" and "36-50" age groups, who prefer in-store shopping over buying with discounts.
-
 <img src="images/pic6_marketing.png?raw=true"/>
 
-## Here is how to execute a nested IFS statement in Excel:
-Go to the column you want to create groups for. Then, insert a new column to the right of the income column for example. Enter this formula:
 
-=IFS(AND(Cell#>=1700,Cell#<=35400),"low",
 
- AND(Cell#>=35401,Cell#<=51400),"lower-middle",
 
- AND(Cell#>=51401,Cell#<=68200),"upper-middle",
 
- Cell#>=68201,"High",TRUE,"F")
 
-(Note: Cell# refers to the first cell of the attribute you want to group in this case the income cell. For the income values don't insert commas in the thousands excel does not recognize commas in the formula).
-
-## Recommendations: 
-The High income and Upper-middle income groups in the "36-50" "51-65" age groups, is a potential target segment for the company's brand positioning strategy. What is interesting, is that both income groups can be reached by in-store, through a website, and by reading a catalogue. The company's positioning statement can be, "the no.1 delivery service provider with products tailored specifically for busy families". 
-
-A practical takeaway from this project is that grouping customers by income, age, and buying behaviour in Excel using nested IFS formulas is a powerful way to segment a market. By setting up clear income brackets, you can quickly segment and analyse customer behaviour in large datasets, an approach that can be easily applied in other marketing projects.
 
