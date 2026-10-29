@@ -20,3 +20,9 @@ Analyzed 9,998 rows of World Bank dataset using SQL, to find the major implement
 <img src="images/Education_data.png?raw=true"/>
 Created a dashboard using tableau for the 2017 State of Massachusetts education data. 
 
+---
+
+#### [US Healthcare MySQL Project](/healthcare_project)
+<img src="images/pic_healthcare.png?raw=true"/>
+Analyzed 101,766 rows of patient encounters at 130 US hospitals using MySQL workbench.
+
