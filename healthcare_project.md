@@ -1,19 +1,19 @@
-## This can be a template for an internal prject
+## MySQL Healthcare Project
 
-**Project description:** You can use this template to create projects in the future. Simply duplicate the page and change the text and images. 
+The dataset represents 10 years (1999-2008) of Clinical care at 130 US hospitals. Each row is a patient diagnosed with diabetes, and performed laboratory testing, medications, and stayed up to 14 days in the hospital. The dataset is made up of two tables, the health table consisting of 101,766 rows of patient encounters/admission to the hospital, and the demographics table consisting of 71,518 rows of patient details. [Click here to access the dataset](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008). 
 
-Be sure to follow *The Interesting Project Template* as shown in [**The Data Science Project Studio**](https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). 
+What is the distribution of time spent in the hospital, and do the majority of patients stay less than 7 days? Using the following query, it looks like 80,617 (79%) of patients stay less than 7 days in the hospital, while the remaining 21,149 (21%) stayed more than 7 days.  
 
-### 1. You can have sections and text.
-
-Just like this. And you can even add internal coding blocks
-
+### 1. Use this SQL query: 
 ```python
-print('this is the python code I used to solve this problem')
+print('USE patient, 
+SELECT ROUND (time_in_hospital,1) AS number_of_days_spent_in_hospital, 
+COUNT (*) AS admission_count, 
+RPAD (' ', COUNT (*)/1000, '*') AS bar 
+FROM health 
+GROUP BY  number_of_days_spent_in_hospital 
+ORDER BY number_of_days_spent_in_hospital; ')
 ```
 
-### 2. You can add any images you'd like. 
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 
