@@ -6,13 +6,13 @@ What is the distribution of time spent in the hospital, and do the majority of p
 
 ### 1. Use this SQL query: 
 ```python
-print('USE patient, 
+'USE patient, 
 SELECT ROUND (time_in_hospital,1) AS number_of_days_spent_in_hospital, 
 COUNT (*) AS admission_count, 
 RPAD (' ', COUNT (*)/1000, '*') AS bar 
 FROM health 
 GROUP BY  number_of_days_spent_in_hospital 
-ORDER BY number_of_days_spent_in_hospital; ')
+ORDER BY number_of_days_spent_in_hospital; 
 ```
 
 
